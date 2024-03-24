@@ -4,12 +4,11 @@ body {
     overflow: auto;
     display: flex;
     flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Background Specification */
 .back {
-    background: peachpuff;
-    border: 4px solid brown;
     flex: 1 0 auto;
 }
 
@@ -17,6 +16,8 @@ body {
     height: 450px;
     display: flex;
     flex-direction: column;
+    background-color: #1f2937;
+    color: white;
 }
 
 .header {
@@ -25,9 +26,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: lightpink;
-    border: 4px solid brown;
+}
 
+.logo {
+    font-size: 32px;
+    font-weight: 700;
 }
 
 ul {
@@ -36,14 +39,16 @@ ul {
     gap: 24px;
 }
 
+a, a:visited  {
+    text-decoration: none;
+    color: inherit;
+}
+
 .one .container {
     flex: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: gray;
-    border: 4px solid brown;
-    
 }
 
 .frame {
@@ -51,40 +56,51 @@ ul {
     display: flex;
     align-items: center;
     gap: 32px;
-    border: 4px solid rgb(5, 255, 197);
 }
 
 .one .left {
     max-width: 450px;
-    height: 272px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    border: 4px solid rgb(0, 222, 78);
+    justify-content: center;
+    gap:8px;
+    outline: none;
+}
+
+.one .title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.one .text {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .one .right {
     flex: 1 1 auto;
 }
 
-.left button {
-    flex-grow: 0;
-    border: 4px solid rgb(255, 0, 0);
+button{
+    width: 120px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: #3882f6;
+    color: white;
+    font-weight: 900;
 }
 
-.text, .title {
-    border: 4px solid rgb(0, 21, 254);
+button.top {
+    border: none;
 }
 
 .right img {
     max-width: 500px;
-    border: 4px solid brown;
 }
 
 /* Second Container*/
 .two {
-    height: 450px;
+    max-height: 450px;
     display: flex;
     padding: 48px;
     flex-direction: column;
@@ -93,6 +109,9 @@ ul {
 
 .two .title {
     margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 
 .two .container {
@@ -109,14 +128,16 @@ ul {
 }
 
 .img {
-    width: 172px;
+    border: 4px solid #3882f6;
+    border-radius: 12px;
+    width: 172px;   
     height: 172px;
     flex: 1 0 auto;
-    border: 4px solid brown;
 }
 
 .information .text {
     text-align: center;
+    margin-bottom: 24px;
 }
 
 /* Third container*/
@@ -125,6 +146,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #e5e7eb;
 }
 
 .three .container{
@@ -133,8 +155,16 @@ ul {
     flex-direction: column;
 }
 
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
 .author {
-    text-align: end;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 /* Fourth container */
@@ -146,16 +176,36 @@ ul {
 }
 
 .four .container {
-    background-color: rgb(114, 114, 210);
-    width: 1200px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    width: 1000px;
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+.four .left {
+    color: white;
+}
+
+.four .text {
+    color:#e5e7eb; 
+}
+
+.four .title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.four button {
+    border: 2px solid white;
+}
+
+
 .footer {
-    background-color: rgb(231, 159, 158);
+    background-color: #1F2937;
+    color: white;
     height: 72px;
     display: flex;
     align-items: center;
